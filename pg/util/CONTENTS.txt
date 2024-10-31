@@ -1,0 +1,34 @@
+# 
+# This directory is composed of command-line utilities for testing Psygraph.
+# You should *not* have to be running any of these utilites unless you are deeply
+# interested in the innner workings of the Psygraph WordPress plugin.
+# 
+# Before beginning, modify testParams.php to point to your server.
+#
+# The general format fo the test commands is: 
+#
+#     php test.php USERNAME PASSWORD [optName optValue]*
+#
+# As an example:
+#
+# php dumpFile.php beta PW4BETA! format json
+#
+
+
+# Meta
+CONTENTS.txt            This file.
+
+
+# The following are tests that should be run as desired
+test.php                Main test suite, which should be run with a username and password as command-line args.
+                        This depends on the good_*.* files in the current directory.
+dumpFile.php            Dump the file corresponding to a user's events.
+
+
+# The following files are test utilities, and need not be used directly
+testParams.php          You should modify the $params['url'] to point to the server that you are testing.
+good_*.*                Expected test results.
+http.php                For connecting to the server.
+log.php                 Prints the error log, and then clears its contents.
+pgConfig.php            Attempt to read configuration data.
+

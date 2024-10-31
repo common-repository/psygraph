@@ -1,0 +1,41 @@
+<h2>Posts</h2>
+[pg_page page="posts" max="60" height="400px"]
+
+<h3>All Events</h3>
+[pg_events display="list" max="60" height="400px"]
+
+<h3>Admin Settings</h3>
+<div><p>The following settings allow you to share your data publicly.
+   That means that your data becomes publicly accessible both on this site and on the internet in general,
+  so consider that before proceeding.</p>
+  [pg_page page="admin" height="200"]
+</div>
+
+<h3 style="text-align: left;">File Input/Output</h3>
+
+<fieldset><legend>File Output:</legend>
+  <div>HTML: [pg_link linktext="Web page" format="html"]</div>
+  <div>ICS:  [pg_link linktext="Calendar" format="ics"]</div>
+  <div>KML:  [pg_link linktext="Map" format="kml"]</div>
+  <div>CSV:  [pg_link linktext="Comma-separated values" format="csv"]</div>
+</fieldset>
+
+<fieldset><legend>File Input:</legend>
+  <div>[pg_page page="input"]</div>
+</fieldset>
+
+<h3>Audio notes</h3>
+<div>[pg_page page="audio"]</div>
+
+<!--
+
+<h3>RSS Feed</h3>
+RSS: [pg_link linktext="RSS Feed" format="rss"]
+
+<h3>Other Shortcodes</h3>
+<div>2D Graph: [[pg_events display="graph" max="4" signal="accelerationNorm"]]</div>
+<div>3D Graph: [[pg_events display="graph" max="4" signal="acceleration"]]</div>
+<div>Bar Chart: [[pg_events display="bar" max="4" signal="accelerationNorm" interval="week"]]</div>
+<div>Map: [[pg_events display="map" max="4"]]</div>
+
+-->

@@ -1,0 +1,11 @@
+body {
+    margin: 0;
+}
+
+div.pg_embedded table {
+    table-layout: auto;
+}
+
+div.pg_embedded {
+    overflow-y: scroll;
+}

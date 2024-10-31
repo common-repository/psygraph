@@ -1,0 +1,20 @@
+
+This software is the online interface to the Psygraph mobile app.  
+See http://psygraph.com for more details.
+
+It requires a WordPress installation with the Psygraph plugin intalled.
+
+
+CONTENTS.txt        This file
+in.php, input.php   Logic for reading (uploading) CSV files.
+index.php           A redirect, since this folder is not intended to be accessed directly.
+mediaServer.php     Logic for uploading and downloading media files.
+out.php, output.php Logic for writing (downloading) CSV files and several other formats.
+pg.php              Infrastructure for DB access
+pgConfig.xml        A configuration file.
+server.php          The file which handles requests from the client app.
+
+// There following test files have been removed from the plugin because they are not of general interest.
+command.php         Used exlusively for testing 
+util/                Command line utilities used primarily for testing.
+
